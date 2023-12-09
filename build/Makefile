@@ -171,17 +171,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named search_engine_2
+# Target rules for targets named search_engine
 
 # Build rule for target.
-search_engine_2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 search_engine_2
-.PHONY : search_engine_2
+search_engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 search_engine
+.PHONY : search_engine
 
 # fast build rule for target.
-search_engine_2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine_2.dir\build.make CMakeFiles/search_engine_2.dir/build
-.PHONY : search_engine_2/fast
+search_engine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/build
+.PHONY : search_engine/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -235,29 +235,29 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine_2.dir\build.make CMakeFiles/search_engine_2.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine_2.dir\build.make CMakeFiles/search_engine_2.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine_2.dir\build.make CMakeFiles/search_engine_2.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -276,10 +276,10 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... search_engine_2
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... search_engine
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 

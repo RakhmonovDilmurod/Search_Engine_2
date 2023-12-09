@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "search_engine_2.exe"
+			"path" : "search_engine.exe"
 		},
 		{
-			"path" : "search_engine_2.pdb"
+			"path" : "search_engine.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -32,19 +32,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 27,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 38,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 46,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
@@ -63,9 +63,21 @@
 				"parent" : 0
 			},
 			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 26,
+				"line" : 29,
 				"parent" : 0
 			}
 		]
@@ -86,15 +98,23 @@
 			[
 				{
 					"backtrace" : 6,
-					"path" : "C:/Users/HP/OneDrive/Documents/GitHub/Search_Engine_2/nlohmann_json/include"
+					"path" : "C:/Users/HP/OneDrive/Documents/GitHub/Search_Engine_2/include"
 				},
 				{
 					"backtrace" : 7,
+					"path" : "C:/Users/HP/OneDrive/Documents/GitHub/Search_Engine_2/src"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/HP/OneDrive/Documents/GitHub/Search_Engine_2/nlohmann_json/include"
+				},
+				{
+					"backtrace" : 9,
 					"isSystem" : true,
 					"path" : "C:/Users/HP/OneDrive/Documents/GitHub/Search_Engine_2/build/_deps/googletest-src/googletest/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"isSystem" : true,
 					"path" : "C:/Users/HP/OneDrive/Documents/GitHub/Search_Engine_2/build/_deps/googletest-src/googletest"
 				}
@@ -104,7 +124,7 @@
 			{
 				"backtraces" : 
 				[
-					3
+					8
 				],
 				"standard" : "17"
 			},
@@ -125,7 +145,7 @@
 			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "search_engine_2::@6890427a1f51a3e7e1df",
+	"id" : "search_engine::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -158,11 +178,6 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
-				"fragment" : "lib\\libgtest_maind.a",
-				"role" : "libraries"
-			},
-			{
 				"backtrace" : 5,
 				"fragment" : "lib\\libgtestd.a",
 				"role" : "libraries"
@@ -174,8 +189,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "search_engine_2",
-	"nameOnDisk" : "search_engine_2.exe",
+	"name" : "search_engine",
+	"nameOnDisk" : "search_engine.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -197,7 +212,16 @@
 				1,
 				2,
 				3,
-				4
+				7
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				4,
+				5,
+				6
 			]
 		}
 	],
@@ -206,7 +230,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -223,6 +247,21 @@
 			"backtrace" : 1,
 			"path" : "requests.json",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/SearchServer.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/ConvertJSON.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/InvertedIndex.h",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 1,

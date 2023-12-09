@@ -2,7 +2,7 @@
 	"inputs" : 
 	[
 		{
-			"path" : "CMakelists.txt"
+			"path" : "CMakeLists.txt"
 		},
 		{
 			"isGenerated" : true,

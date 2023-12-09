@@ -1147,7 +1147,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "search_engine_2"
+			"value" : "search_engine"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1634,6 +1634,18 @@
 			"value" : ""
 		},
 		{
+			"name" : "FETCHCONTENT_SOURCE_DIR_NLOHMANN_JSON",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "When not empty, overrides where to find pre-populated content for nlohmann_json"
+				}
+			],
+			"type" : "PATH",
+			"value" : ""
+		},
+		{
 			"name" : "FETCHCONTENT_UPDATES_DISCONNECTED",
 			"properties" : 
 			[
@@ -1658,6 +1670,18 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "FETCHCONTENT_UPDATES_DISCONNECTED_NLOHMANN_JSON",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enables UPDATE_DISCONNECTED behavior just for population of nlohmann_json"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Python",
 			"properties" : 
 			[
@@ -1668,6 +1692,22 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python39_64/python.exe][cfound components: Interpreter ][v3.9.13()]"
+		},
+		{
+			"name" : "GIT_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Git command line client"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files/Git/cmd/git.exe"
 		},
 		{
 			"name" : "INSTALL_GTEST",

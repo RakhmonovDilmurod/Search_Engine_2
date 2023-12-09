@@ -12,10 +12,10 @@
 						4
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-577bba10d221c727dfbd.json",
+					"jsonFile" : "directory-.-Debug-6226d967d86cb2d3e7db.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.12"
+						"string" : "3.5"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -103,7 +103,7 @@
 					[
 						0
 					],
-					"name" : "search_engine_2",
+					"name" : "search_engine",
 					"targetIndexes" : 
 					[
 						4
@@ -192,9 +192,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "search_engine_2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-search_engine_2-Debug-aa712d8975511c141daa.json",
-					"name" : "search_engine_2",
+					"id" : "search_engine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-search_engine-Debug-0158cbecee361fa85bfd.json",
+					"name" : "search_engine",
 					"projectIndex" : 0
 				}
 			]

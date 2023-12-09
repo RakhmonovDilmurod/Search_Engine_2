@@ -17,7 +17,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 38,
+				"line" : 48,
 				"parent" : 0
 			}
 		]
@@ -30,9 +30,9 @@
 			"destination" : "bin",
 			"paths" : 
 			[
-				"search_engine_2.exe"
+				"search_engine.exe"
 			],
-			"targetId" : "search_engine_2::@6890427a1f51a3e7e1df",
+			"targetId" : "search_engine::@6890427a1f51a3e7e1df",
 			"targetIndex" : 4,
 			"type" : "target"
 		}
