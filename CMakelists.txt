@@ -1,0 +1,53 @@
+cmake_minimum_required(VERSION 3.12)
+
+project(search_engine_2 LANGUAGES CXX)
+
+include(FetchContent)
+
+FetchContent_MakeAvailable(nlohmann_json)
+
+FetchContent_Declare(
+googletest
+URL
+https://github.com//google//googletest//archive//609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip
+)
+
+include(GoogleTest)
+FetchContent_MakeAvailable(googletest)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(JSON_BuildTests OFF CACHE INTERNAL "")
+set(gtest_disable_pthreads on)
+set(FETCHCONTENT_SOURCE_DIR_DOWNLOAD_EXTRACT_TIMESTAMP true)
+
+
+add_subdirectory(nlohmann_json)
+
+
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+add_executable(
+    search_engine_2 
+    main.cpp
+    answers.json
+    config.json
+    requests.json
+    README.md
+)
+
+
+include(GNUInstallDirs)
+install(TARGETS search_engine_2
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+target_include_directories(search_engine_2 PRIVATE ${nlohmann_json_SOURCE_DIR}/include)
+
+
+target_link_libraries(search_engine_2 PRIVATE nlohmann_json::nlohmann_json gtest_main)
+target_link_libraries(search_engine_2 PRIVATE gtest_main)
+gtest_discover_tests(search_engine_2)
+enable_testing()
+cmake_policy(SET CMP0135 NEW)
+

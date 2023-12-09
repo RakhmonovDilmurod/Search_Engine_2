@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/HP/OneDrive/Documents/GitHub/Search_Engine_2/build/search_engine_2[1]_tests.cmake")
+  include("C:/Users/HP/OneDrive/Documents/GitHub/Search_Engine_2/build/search_engine_2[1]_tests.cmake")
+else()
+  add_test(search_engine_2_NOT_BUILT search_engine_2_NOT_BUILT)
+endif()
